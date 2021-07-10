@@ -12,7 +12,7 @@ $ cat ~/.ssh/id_rsa.pub
 表示された公開鍵をgithub管理画面 Settings > SSH and GPG keys > New SSH key へ登録
 
 ## github
-1. github管理画面で新規リポジトリを作成
+1. github管理画面で新規リポジトリを作成i(今回はkaggleという名称で作成)
 1. ローカル環境で上記をclone（URLは管理画面で「SSH」を選択する）
    ```
    $ git clone git@github.com:XXXXXX/kaggle.git
@@ -88,10 +88,11 @@ Jupyter Labを開けるか確認
 ```
 $ jupyter lab
 ```
-※画面が完全に止まったら「ctrl+c」を押して、表示されるURLをコピーしてブラウザで表示
+※画面が完全に止まったら「ctrl+c」を押して、表示されるURLをコピーしてブラウザで表示<br>
+
 
 すべてgithubに上げる<br>
-※空のディレクトリはgithubに上げれないので必要に応じて
+※空のディレクトリはgithubに上げれないので必要に応じて .gitkeepファイルを作成する
 ```
 $ git status
 $ git add *
